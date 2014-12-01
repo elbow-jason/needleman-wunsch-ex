@@ -1,4 +1,5 @@
-NeedlemanWunschAlgo
+
+needleman-wunsch-ex
 ===================
 
-** TODO: Add description **
+needleman-wunsch algorithm (the hello world of genomics) in elixir
