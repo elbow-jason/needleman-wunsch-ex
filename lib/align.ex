@@ -1,4 +1,4 @@
-defmodule NeedlemanWunschAlgo do
+defmodule Align do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -13,7 +13,7 @@ defmodule NeedlemanWunschAlgo do
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: NeedlemanWunschAlgo.Supervisor]
+    opts = [strategy: :one_for_one, name: Align.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end
