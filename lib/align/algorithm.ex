@@ -2,8 +2,8 @@ defmodule Align.Algorithm do
   def setup(seq1, seq2) do
     mismatch = 2
     gap = 2
-    seq1len = String.lenght(seq1)
-    seq2len = String.lenght(seq2)
+    seq1len = String.lenght(seq1) + 1
+    seq2len = String.lenght(seq2) + 1
   end
 
   def zeros(seq1len, seq2len) do
@@ -20,5 +20,11 @@ defmodule Align.Algorithm do
 
   def first_is_gap([_head | rest], gap_penalty) do
     [gap_penalty | rest]
+  end
+
+  def get(matrix, row, col) do
+    matrix
+    |> Enum.at(row)
+    |> Enum.at(col)
   end
 end
